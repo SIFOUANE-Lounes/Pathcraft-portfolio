@@ -1,0 +1,23 @@
+<section>
+  <h2>New category</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label>
+      Name
+      <input formControlName="name" />
+      <span class="error" *ngIf="f['name'].invalid && f['name'].touched">
+        Name is required (min 2 chars).
+      </span>
+    </label>
+
+    <label>
+      Color
+      <input type="color" formControlName="color" />
+      <span class="error" *ngIf="f['color'].invalid && f['color'].touched">
+        Color is required.
+      </span>
+    </label>
+
+    <button type="submit" [disabled]="form.invalid">Create</button>
+  </form>
+</section>

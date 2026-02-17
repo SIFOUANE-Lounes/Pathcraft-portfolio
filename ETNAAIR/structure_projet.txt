@@ -1,0 +1,145 @@
+📦 PROJET : /home/lounes/ETNAAIR
+==================================================
+├── .gitignore
+├── README.md
+├── back
+│   ├── api
+│   │   ├── .env
+│   │   ├── Dockerfile
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── prisma
+│   │   │   ├── client.js
+│   │   │   ├── migrations
+│   │   │   │   ├── 20260108124356_init
+│   │   │   │   │   └── migration.sql
+│   │   │   │   └── migration_lock.toml
+│   │   │   ├── prisma.config.ts
+│   │   │   ├── schema.prisma
+│   │   │   └── seed.js
+│   │   ├── routes
+│   │   │   ├── annonces.routes.js
+│   │   │   └── utilisateurs.routes.js
+│   │   ├── server.js
+│   │   ├── src
+│   │   │   ├── controllers
+│   │   │   │   ├── annonces.controller.js
+│   │   │   │   ├── auth.controller.js
+│   │   │   │   └── utilisateurs.controller.js
+│   │   │   ├── middleware
+│   │   │   │   └── verifyToken.js
+│   │   │   ├── prisma.js
+│   │   │   ├── routes
+│   │   │   │   ├── annonces.routes.js
+│   │   │   │   ├── auth.routes.js
+│   │   │   │   └── utilisateurs.routes.js
+│   │   │   └── validators
+│   │   │       ├── annonces.validators.js
+│   │   │       ├── auth.validators.js
+│   │   │       └── utilisateurs.validators.js
+│   │   └── test.js
+│   ├── controllers
+│   ├── db
+│   │   ├── dump.sql
+│   │   ├── package-lock.json
+│   │   └── package.json
+│   └── middlewares
+├── docker-compose.yml
+├── front
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   └── vite.svg
+│   ├── src
+│   │   ├── App.tsx
+│   │   ├── Attributions.md
+│   │   ├── components
+│   │   │   ├── CheckoutPage.tsx
+│   │   │   ├── CreateListingFlow.tsx
+│   │   │   ├── Dashboard.tsx
+│   │   │   ├── Header.tsx
+│   │   │   ├── HomePage.tsx
+│   │   │   ├── ListingCard.tsx
+│   │   │   ├── ListingDetail.tsx
+│   │   │   ├── ReservationBox.tsx
+│   │   │   ├── auth
+│   │   │   │   ├── LoginPage.tsx
+│   │   │   │   └── UserTypeSelection.tsx
+│   │   │   ├── create-listing
+│   │   │   │   ├── AmenitiesStep.tsx
+│   │   │   │   ├── PhotosStep.tsx
+│   │   │   │   ├── PropertyDetailsStep.tsx
+│   │   │   │   └── PropertyTypeStep.tsx
+│   │   │   ├── figma
+│   │   │   │   └── ImageWithFallback.tsx
+│   │   │   └── ui
+│   │   │       ├── accordion.tsx
+│   │   │       ├── alert-dialog.tsx
+│   │   │       ├── alert.tsx
+│   │   │       ├── aspect-ratio.tsx
+│   │   │       ├── avatar.tsx
+│   │   │       ├── badge.tsx
+│   │   │       ├── breadcrumb.tsx
+│   │   │       ├── button.tsx
+│   │   │       ├── calendar.tsx
+│   │   │       ├── card.tsx
+│   │   │       ├── carousel.tsx
+│   │   │       ├── chart.tsx
+│   │   │       ├── checkbox.tsx
+│   │   │       ├── collapsible.tsx
+│   │   │       ├── command.tsx
+│   │   │       ├── context-menu.tsx
+│   │   │       ├── dialog.tsx
+│   │   │       ├── drawer.tsx
+│   │   │       ├── dropdown-menu.tsx
+│   │   │       ├── form.tsx
+│   │   │       ├── hover-card.tsx
+│   │   │       ├── input-otp.tsx
+│   │   │       ├── input.tsx
+│   │   │       ├── label.tsx
+│   │   │       ├── menubar.tsx
+│   │   │       ├── navigation-menu.tsx
+│   │   │       ├── pagination.tsx
+│   │   │       ├── popover.tsx
+│   │   │       ├── progress.tsx
+│   │   │       ├── radio-group.tsx
+│   │   │       ├── resizable.tsx
+│   │   │       ├── scroll-area.tsx
+│   │   │       ├── select.tsx
+│   │   │       ├── separator.tsx
+│   │   │       ├── sheet.tsx
+│   │   │       ├── sidebar.tsx
+│   │   │       ├── skeleton.tsx
+│   │   │       ├── slider.tsx
+│   │   │       ├── sonner.tsx
+│   │   │       ├── switch.tsx
+│   │   │       ├── table.tsx
+│   │   │       ├── tabs.tsx
+│   │   │       ├── textarea.tsx
+│   │   │       ├── toggle-group.tsx
+│   │   │       ├── toggle.tsx
+│   │   │       ├── tooltip.tsx
+│   │   │       ├── use-mobile.ts
+│   │   │       └── utils.ts
+│   │   ├── data
+│   │   │   └── mockData.ts
+│   │   ├── guidelines
+│   │   │   └── Guidelines.md
+│   │   ├── index.css
+│   │   ├── main.tsx
+│   │   ├── styles
+│   │   │   └── globals.css
+│   │   └── types
+│   │       └── index.ts
+│   └── vite.config.js
+├── map_project.py
+├── package-lock.json
+├── package.json
+├── skeleton.py
+├── tâches.txt
+└── voir_tout.py

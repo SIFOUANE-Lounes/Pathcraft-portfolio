@@ -1,0 +1,28 @@
+<section>
+  <h2>Categories</h2>
+
+  <button type="button" (click)="goToCreate()">+ New category</button>
+
+  <p *ngIf="errorMessage" class="error">
+    {{ errorMessage }}
+  </p>
+
+  <div *ngIf="categories.length === 0">
+    <p>No categories yet.</p>
+  </div>
+
+  <ul *ngIf="categories.length > 0">
+    <li *ngFor="let cat of categories">
+      <strong>{{ cat.name }}</strong>
+      <span
+        *ngIf="cat.color"
+        [style.background]="cat.color"
+        style="display: inline-block; width: 12px; height: 12px; margin-left: 4px;"
+      ></span>
+
+      – {{ getContactCountForCategory(cat.id) }} contact(s)
+
+      <button type="button" (click)="deleteCategory(cat)">Delete</button>
+    </li>
+  </ul>
+</section>

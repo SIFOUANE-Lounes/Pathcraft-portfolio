@@ -1,0 +1,14 @@
+<div class="card" [class.fav]="fav.isFavorite()">
+  <h3>{{ contact.name }}</h3>
+  <p><strong>Rôle :</strong> {{ contact.role }}</p>
+  <p><strong>Email :</strong> {{ contact.email }}</p>
+
+  <button (click)="seeDetails()">Voir détail</button>
+  <button (click)="toggleFavorite()">
+    {{ fav.isFavorite() ? '★ Retirer des favoris' : '☆ Ajouter aux favoris' }}
+  </button>
+
+  <p style="font-size: 13px; color: gray;">
+    Clics (StatsService) : {{ stats.getClicks() }} — Instance : {{ stats.instanceId }}
+  </p>
+</div>

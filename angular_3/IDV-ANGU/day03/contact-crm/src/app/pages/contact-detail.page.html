@@ -1,0 +1,25 @@
+<section *ngIf="contact; else notFound">
+  <h2>{{ contact.firstName }} {{ contact.lastName }}</h2>
+
+  <p><strong>Email:</strong> {{ contact.email }}</p>
+  <p><strong>Phone:</strong> {{ contact.phone }}</p>
+  <p><strong>Company:</strong> {{ contact.company }}</p>
+  <p><strong>Job title:</strong> {{ contact.jobTitle }}</p>
+
+  <p *ngIf="category">
+    <strong>Category:</strong> {{ category.name }}
+  </p>
+
+  <p *ngIf="contact.notes">
+    <strong>Notes:</strong> {{ contact.notes }}
+  </p>
+
+  <p><strong>Favorite:</strong> {{ contact.favorite ? 'Yes' : 'No' }}</p>
+
+  <button type="button" (click)="edit()">Edit</button>
+  <button type="button" (click)="delete()">Delete</button>
+</section>
+
+<ng-template #notFound>
+  <p>Contact not found.</p>
+</ng-template>

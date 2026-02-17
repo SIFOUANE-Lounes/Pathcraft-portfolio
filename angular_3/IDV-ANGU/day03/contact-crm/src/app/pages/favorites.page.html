@@ -1,0 +1,15 @@
+<section>
+  <h2>Favorite contacts</h2>
+
+  <div *ngIf="favorites.length === 0">
+    <p>No favorite contacts yet.</p>
+  </div>
+
+  <ul *ngIf="favorites.length > 0">
+    <li *ngFor="let c of favorites">
+      <strong>{{ c.firstName }} {{ c.lastName }}</strong>
+      – {{ c.jobTitle }} at {{ c.company }}
+      <button type="button" (click)="goToDetail(c)">Details</button>
+    </li>
+  </ul>
+</section>

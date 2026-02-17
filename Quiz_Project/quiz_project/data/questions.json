@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "theme": "Histoire",
+        "question": "En quelle année Christophe Colomb a-t-il découvert l'Amérique ?",
+        "options": [
+            "1492",
+            "1620",
+            "1776",
+            "1945"
+        ],
+        "reponse": "1492"
+    },
+    {
+        "id": 2,
+        "theme": "Géographie",
+        "question": "Quel est le plus grand désert du monde ?",
+        "options": [
+            "Sahara",
+            "Antarctique",
+            "Gobi",
+            "Kalahari"
+        ],
+        "reponse": "Antarctique"
+    },
+    {
+        "id": 3,
+        "theme": "Sciences",
+        "question": "Quel est l’élément chimique dont le symbole est O ?",
+        "options": [
+            "Or",
+            "Oxygène",
+            "Osmium",
+            "Oxonium"
+        ],
+        "reponse": "Oxygène"
+    },
+    {
+        "id": 4,
+        "theme": "Culture générale",
+        "question": "Combien de continents compte la Terre ?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "reponse": "7"
+    },
+    {
+        "id": 5,
+        "theme": "Sport",
+        "question": "Combien de joueurs y a-t-il dans une équipe de football ?",
+        "options": [
+            "9",
+            "10",
+            "11",
+            "12"
+        ],
+        "reponse": "11"
+    },
+    {
+        "id": 6,
+        "theme": "Littérature",
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "options": [
+            "Victor Hugo",
+            "Émile Zola",
+            "Gustave Flaubert",
+            "Honoré de Balzac"
+        ],
+        "reponse": "Victor Hugo"
+    },
+    {
+        "id": 7,
+        "theme": "Musique",
+        "question": "Quel compositeur est devenu sourd à la fin de sa vie ?",
+        "options": [
+            "Mozart",
+            "Beethoven",
+            "Bach",
+            "Chopin"
+        ],
+        "reponse": "Beethoven"
+    },
+    {
+        "id": 8,
+        "theme": "Cinéma",
+        "question": "Qui a réalisé le film 'Titanic' ?",
+        "options": [
+            "Steven Spielberg",
+            "James Cameron",
+            "Ridley Scott",
+            "Christopher Nolan"
+        ],
+        "reponse": "James Cameron"
+    },
+    {
+        "id": 9,
+        "theme": "Technologie",
+        "question": "Quelle entreprise a créé l’iPhone ?",
+        "options": [
+            "Samsung",
+            "Apple",
+            "Google",
+            "Microsoft"
+        ],
+        "reponse": "Apple"
+    },
+    {
+        "id": 10,
+        "theme": "Nature",
+        "question": "Quel est le plus grand mammifère du monde ?",
+        "options": [
+            "Éléphant",
+            "Baleine bleue",
+            "Girafe",
+            "Orque"
+        ],
+        "reponse": "Baleine bleue"
+    },
+    {
+        "id": 11,
+        "theme": "Art",
+        "question": "Qui a peint la Joconde ?",
+        "options": [
+            "Léonard de Vinci",
+            "Michel-Ange",
+            "Raphaël",
+            "Van Gogh"
+        ],
+        "reponse": "Léonard de Vinci"
+    },
+    {
+        "id": 12,
+        "theme": "Histoire",
+        "question": "Quel pays a construit la Grande Muraille ?",
+        "options": [
+            "Inde",
+            "Japon",
+            "Chine",
+            "Corée"
+        ],
+        "reponse": "Chine"
+    },
+    {
+        "id": 13,
+        "theme": "Géographie",
+        "question": "Quel est le plus long fleuve du monde ?",
+        "options": [
+            "Nil",
+            "Amazone",
+            "Yangtsé",
+            "Mississippi"
+        ],
+        "reponse": "Amazone"
+    },
+    {
+        "id": 14,
+        "theme": "Sciences",
+        "question": "Quel est le centre de notre système solaire ?",
+        "options": [
+            "Terre",
+            "Lune",
+            "Soleil",
+            "Jupiter"
+        ],
+        "reponse": "Soleil"
+    },
+    {
+        "id": 15,
+        "theme": "Culture générale",
+        "question": "Combien de jours y a-t-il en février lors d'une année bissextile ?",
+        "options": [
+            "28",
+            "29",
+            "30",
+            "31"
+        ],
+        "reponse": "29"
+    },
+    {
+        "id": 16,
+        "theme": "Sport",
+        "question": "Dans quel sport utilise-t-on une raquette ?",
+        "options": [
+            "Football",
+            "Tennis",
+            "Boxe",
+            "Golf"
+        ],
+        "reponse": "Tennis"
+    },
+    {
+        "id": 17,
+        "theme": "Littérature",
+        "question": "Qui a écrit 'Harry Potter' ?",
+        "options": [
+            "J.K. Rowling",
+            "Stephen King",
+            "Suzanne Collins",
+            "George R.R. Martin"
+        ],
+        "reponse": "J.K. Rowling"
+    },
+    {
+        "id": 18,
+        "theme": "Musique",
+        "question": "Quel est l’instrument principal d’un pianiste ?",
+        "options": [
+            "Guitare",
+            "Batterie",
+            "Piano",
+            "Violon"
+        ],
+        "reponse": "Piano"
+    },
+    {
+        "id": 19,
+        "theme": "Cinéma",
+        "question": "Quel super-héros est aussi appelé 'l’homme chauve-souris' ?",
+        "options": [
+            "Superman",
+            "Batman",
+            "Iron Man",
+            "Spider-Man"
+        ],
+        "reponse": "Batman"
+    },
+    {
+        "id": 20,
+        "theme": "Technologie",
+        "question": "Que signifie l’abréviation 'HTML' ?",
+        "options": [
+            "HyperText Markup Language",
+            "High Tech Machine Language",
+            "Home Tool Markup Language",
+            "Hyper Transfer Mode Language"
+        ],
+        "reponse": "HyperText Markup Language"
+    },
+    {
+        "id": 21,
+        "theme": "Nature",
+        "question": "Quelle est la principale source d’énergie des plantes ?",
+        "options": [
+            "Eau",
+            "Soleil",
+            "Vent",
+            "Terre"
+        ],
+        "reponse": "Soleil"
+    },
+    {
+        "id": 22,
+        "theme": "Art",
+        "question": "Quel artiste est célèbre pour ses tableaux de tournesols ?",
+        "options": [
+            "Van Gogh",
+            "Monet",
+            "Picasso",
+            "Cézanne"
+        ],
+        "reponse": "Van Gogh"
+    },
+    {
+        "id": 23,
+        "theme": "Histoire",
+        "question": "Qui était le premier empereur de France ?",
+        "options": [
+            "Louis XIV",
+            "Napoléon Bonaparte",
+            "Charlemagne",
+            "François Ier"
+        ],
+        "reponse": "Napoléon Bonaparte"
+    },
+    {
+        "id": 24,
+        "theme": "Géographie",
+        "question": "Quel est le plus grand océan du monde ?",
+        "options": [
+            "Atlantique",
+            "Arctique",
+            "Pacifique",
+            "Indien"
+        ],
+        "reponse": "Pacifique"
+    },
+    {
+        "id": 25,
+        "theme": "Sciences",
+        "question": "Combien de planètes composent le système solaire ?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "reponse": "8"
+    },
+    {
+        "id": 26,
+        "theme": "Culture générale",
+        "question": "Quelle est la capitale de la France ?",
+        "options": [
+            "Lyon",
+            "Paris",
+            "Marseille",
+            "Toulouse"
+        ],
+        "reponse": "Paris"
+    },
+    {
+        "id": 27,
+        "theme": "Sport",
+        "question": "Dans quel sport utilise-t-on un ballon ovale ?",
+        "options": [
+            "Football",
+            "Basketball",
+            "Rugby",
+            "Handball"
+        ],
+        "reponse": "Rugby"
+    },
+    {
+        "id": 28,
+        "theme": "Littérature",
+        "question": "Qui a écrit 'Le Petit Prince' ?",
+        "options": [
+            "Antoine de Saint-Exupéry",
+            "Victor Hugo",
+            "Molière",
+            "Albert Camus"
+        ],
+        "reponse": "Antoine de Saint-Exupéry"
+    },
+    {
+        "id": 29,
+        "theme": "Musique",
+        "question": "Quel groupe a chanté 'Bohemian Rhapsody' ?",
+        "options": [
+            "Queen",
+            "The Beatles",
+            "ABBA",
+            "Pink Floyd"
+        ],
+        "reponse": "Queen"
+    },
+    {
+        "id": 30,
+        "theme": "Cinéma",
+        "question": "Quel acteur incarne Jack Sparrow dans 'Pirates des Caraïbes' ?",
+        "options": [
+            "Brad Pitt",
+            "Johnny Depp",
+            "Tom Cruise",
+            "Leonardo DiCaprio"
+        ],
+        "reponse": "Johnny Depp"
+    },
+    {
+        "id": 31,
+        "theme": "Technologie",
+        "question": "Quel est le système d’exploitation développé par Microsoft ?",
+        "options": [
+            "macOS",
+            "Linux",
+            "Windows",
+            "Android"
+        ],
+        "reponse": "Windows"
+    },
+    {
+        "id": 32,
+        "theme": "Nature",
+        "question": "Quel animal est connu pour sa lenteur et sa carapace ?",
+        "options": [
+            "Tortue",
+            "Escargot",
+            "Paresseux",
+            "Crabe"
+        ],
+        "reponse": "Tortue"
+    },
+    {
+        "id": 33,
+        "theme": "Art",
+        "question": "Quel peintre est célèbre pour ses œuvres cubistes ?",
+        "options": [
+            "Picasso",
+            "Monet",
+            "Dali",
+            "Rembrandt"
+        ],
+        "reponse": "Picasso"
+    },
+    {
+        "id": 34,
+        "theme": "Histoire",
+        "question": "En quelle année a eu lieu la Révolution française ?",
+        "options": [
+            "1789",
+            "1848",
+            "1914",
+            "1945"
+        ],
+        "reponse": "1789"
+    },
+    {
+        "id": 35,
+        "theme": "Géographie",
+        "question": "Quel est le pays le plus peuplé du monde ?",
+        "options": [
+            "Inde",
+            "Chine",
+            "États-Unis",
+            "Indonésie"
+        ],
+        "reponse": "Chine"
+    },
+    {
+        "id": 36,
+        "theme": "Sciences",
+        "question": "Quel gaz les plantes rejettent-elles lors de la photosynthèse ?",
+        "options": [
+            "Oxygène",
+            "Carbone",
+            "Azote",
+            "Hydrogène"
+        ],
+        "reponse": "Oxygène"
+    },
+    {
+        "id": 37,
+        "theme": "Culture générale",
+        "question": "Combien de côtés a un hexagone ?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "reponse": "6"
+    },
+    {
+        "id": 38,
+        "theme": "Sport",
+        "question": "Quel joueur de football est surnommé 'La Pulga' ?",
+        "options": [
+            "Cristiano Ronaldo",
+            "Lionel Messi",
+            "Neymar",
+            "Mbappé"
+        ],
+        "reponse": "Lionel Messi"
+    },
+    {
+        "id": 39,
+        "theme": "Littérature",
+        "question": "Quel écrivain a créé le personnage de Sherlock Holmes ?",
+        "options": [
+            "Arthur Conan Doyle",
+            "Agatha Christie",
+            "Charles Dickens",
+            "Jules Verne"
+        ],
+        "reponse": "Arthur Conan Doyle"
+    },
+    {
+        "id": 40,
+        "theme": "Musique",
+        "question": "Quel instrument possède des touches blanches et noires ?",
+        "options": [
+            "Violon",
+            "Piano",
+            "Harpe",
+            "Flûte"
+        ],
+        "reponse": "Piano"
+    },
+    {
+        "id": 41,
+        "theme": "Cinéma",
+        "question": "Quel film met en scène un dinosaure dans un parc d’attractions ?",
+        "options": [
+            "Jurassic Park",
+            "King Kong",
+            "Avatar",
+            "Le Monde perdu"
+        ],
+        "reponse": "Jurassic Park"
+    },
+    {
+        "id": 42,
+        "theme": "Technologie",
+        "question": "Quel est le langage de programmation principalement utilisé pour les pages web ?",
+        "options": [
+            "Python",
+            "C++",
+            "HTML",
+            "Java"
+        ],
+        "reponse": "HTML"
+    },
+    {
+        "id": 43,
+        "theme": "Nature",
+        "question": "Quel est l’habitat naturel du pingouin ?",
+        "options": [
+            "Pôle Sud",
+            "Pôle Nord",
+            "Forêt tropicale",
+            "Montagne"
+        ],
+        "reponse": "Pôle Sud"
+    },
+    {
+        "id": 44,
+        "theme": "Art",
+        "question": "Quel artiste est connu pour ses montres molles ?",
+        "options": [
+            "Salvador Dalí",
+            "Pablo Picasso",
+            "Claude Monet",
+            "Andy Warhol"
+        ],
+        "reponse": "Salvador Dalí"
+    },
+    {
+        "id": 45,
+        "theme": "Histoire",
+        "question": "Qui était le roi de France pendant la Révolution française ?",
+        "options": [
+            "Louis XIV",
+            "Louis XV",
+            "Louis XVI",
+            "Charles X"
+        ],
+        "reponse": "Louis XVI"
+    },
+    {
+        "id": 46,
+        "theme": "Géographie",
+        "question": "Quelle est la capitale du Japon ?",
+        "options": [
+            "Pékin",
+            "Tokyo",
+            "Séoul",
+            "Hanoï"
+        ],
+        "reponse": "Tokyo"
+    },
+    {
+        "id": 47,
+        "theme": "Sciences",
+        "question": "Quelle est la planète la plus proche du Soleil ?",
+        "options": [
+            "Mercure",
+            "Vénus",
+            "Terre",
+            "Mars"
+        ],
+        "reponse": "Mercure"
+    },
+    {
+        "id": 48,
+        "theme": "Culture générale",
+        "question": "Combien de secondes y a-t-il dans une minute ?",
+        "options": [
+            "60",
+            "100",
+            "120",
+            "30"
+        ],
+        "reponse": "60"
+    },
+    {
+        "id": 49,
+        "theme": "Sport",
+        "question": "Dans quel sport Michael Jordan est-il une légende ?",
+        "options": [
+            "Football",
+            "Basketball",
+            "Baseball",
+            "Tennis"
+        ],
+        "reponse": "Basketball"
+    },
+    {
+        "id": 50,
+        "theme": "Littérature",
+        "question": "Quel roman commence par 'Longtemps je me suis couché de bonne heure' ?",
+        "options": [
+            "À la recherche du temps perdu",
+            "Les Misérables",
+            "Madame Bovary",
+            "Le Rouge et le Noir"
+        ],
+        "reponse": "À la recherche du temps perdu"
+    }
+]

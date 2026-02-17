@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+header, footer {
+  border: 1px solid #eee;
+  padding: 12px;
+}
+
+main {
+  padding: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+nav a {
+  margin-right: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #111;
+}
+
+nav a.active {
+  background: #111;
+  color: #fff;
+}

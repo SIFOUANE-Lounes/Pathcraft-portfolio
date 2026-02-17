@@ -1,0 +1,247 @@
+📘 CAHIER DES CHARGES – Refonte UX/UI de l’Intranet Étudiant ETNA
+1. Contexte du projet
+
+L’intranet actuel de l’ETNA permet aux étudiants de consulter leur planning, leurs modules, leurs documents et de créer des tickets de support.
+Cependant, l’expérience utilisateur manque de clarté, de cohérence et de fluidité, ce qui affecte l’efficacité d’usage au quotidien.
+
+L’objectif de ce projet est de repenser l’interface et le parcours utilisateur pour offrir une utilisation plus intuitive, agréable et moderne.
+
+2. Objectifs du projet
+🎯 Objectifs principaux
+
+Moderniser l’interface selon les standards UX/UI actuels
+
+Simplifier la navigation et réduire le nombre de clics
+
+Clarifier les informations importantes dès l’accueil
+
+Améliorer la cohérence visuelle entre les pages
+
+Concevoir un design responsive (desktop + mobile)
+
+Optimiser l’accès aux modules, documents, planning et support
+
+🎯 Objectifs secondaires
+
+Rendre la création de tickets plus simple et rapide
+
+Proposer un système de notes clair par module
+
+Améliorer la compréhension du parcours utilisateur
+
+Créer un Design System léger pour assurer la cohérence
+
+Produire un prototype Figma interactif
+
+3. Analyse de l’existant
+❌ Problèmes identifiés
+
+Page d’accueil vide et peu informative
+
+Navigation complexe et non intuitive
+
+Planning difficile à lire
+
+Informations dispersées
+
+Système de tickets peu ergonomique
+
+Absence d’une version mobile adaptée
+
+Parcours utilisateur long et confus
+
+Manque d’homogénéité graphique
+
+✔️ Points positifs existants
+
+Fonctionnalités essentielles déjà présentes
+
+Planning intégré
+
+Système de tickets fonctionnel
+
+Modules et ressources centralisés
+
+4. Besoins utilisateurs
+
+À partir de l’analyse et des retours :
+
+👤 Besoins principaux
+
+Accéder rapidement aux informations du jour
+
+Trouver facilement leurs cours et leurs modules
+
+Avoir une interface nette, lisible et cohérente
+
+Pouvoir utiliser l’intranet sur mobile
+
+Créer un ticket en moins d’une minute
+
+Suivre leurs notes et leur progression académique
+
+Réduire les temps de recherche d’information
+
+5. Fonctionnalités attendues
+5.1. Tableau de bord (Accueil)
+
+Affichage du prochain cours
+
+Notifications importantes
+
+Modules récemment consultés
+
+Accès rapide : planning, support, documents
+
+5.2. Apprentissage
+
+Liste des modules
+
+Carte Module avec progression
+
+Page “Détail du module”
+
+Notes et ressources associées
+
+5.3. Planning
+
+Vue hebdomadaire claire
+
+Code couleur des cours
+
+Navigation par semaine
+
+5.4. Support (Tickets)
+
+Création de tickets simplifiée
+
+Formulaire : titre + catégorie + priorité + description
+
+Historique des tickets
+
+Filtre par statut
+
+5.5. Profil
+
+Informations personnelles
+
+Statistiques : progression, badges, heures
+
+Paramètres
+
+Bouton Déconnexion fonctionnel
+
+Section “Mes Notes” avec moyenne générale + détail
+
+5.6. Responsive
+
+Interface mobile complète
+
+Adaptation du menu, des cartes et de la navigation
+
+Optimisation de la lisibilité
+
+6. Structure (Arborescence)
+🌐 Arborescence retenue
+
+Accueil (Dashboard)
+
+Apprentissage
+
+Modules
+
+Détail Module
+
+Planning
+
+Support
+
+Nouveau ticket
+
+Suivi des tickets
+
+Profil
+
+Infos personnelles
+
+Notes
+
+Paramètres
+
+Déconnexion
+
+7. Contraintes techniques
+
+Doit être conçu en Figma
+
+Utiliser une grille 8 ou 12 colonnes
+
+Respect des principes UX :
+
+Hiérarchie visuelle
+
+Cohérence
+
+Contraste suffisant
+
+Accessibilité
+
+Design System minimal :
+
+Couleurs
+
+Typographies
+
+Boutons
+
+Formulaires
+
+Cartes
+
+8. Livrables attendus
+📁 Livrables finaux
+
+Analyse UX (parcours + friction + besoins)
+
+Arborescence complète
+
+Wireframes
+
+Prototype Figma interactif
+
+Desktop
+
+Mobile
+
+Maquette UI finale
+
+Présentation PowerPoint
+
+Script oral (Soutenance)
+
+Cahier des charges (le document que tu lis maintenant)
+
+9. Planning prévisionnel
+⏳ 1 jour (imposé par l’exercice)
+
+Analyse : 2 h
+
+Parcours + besoins : 1 h
+
+Wireframes : 2 h
+
+Maquettes UI : 4 h
+
+Prototype Figma : 2 h
+
+PPT + script : 2 h
+
+10. Conclusion
+
+Ce cahier des charges encadre la refonte complète de l’intranet de l’ETNA en se concentrant sur une expérience utilisateur plus intuitive, plus moderne, plus rapide et accessible en mobilité.
+
+Il garantit que la solution finale :
+✔ répond aux besoins réels des étudiants,
+✔ simplifie les usages quotidiens,
+✔ renforce la cohérence visuelle,
+✔ et améliore l’efficacité globale de l’outil.

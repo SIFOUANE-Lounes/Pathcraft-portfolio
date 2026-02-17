@@ -1,0 +1,59 @@
+<section>
+  <h2>Contacts</h2>
+
+  <button type="button" (click)="goToCreate()">+ New contact</button>
+
+  <div class="filters">
+    <input
+      type="text"
+      placeholder="Search by name..."
+      [(ngModel)]="searchTerm"
+      (input)="onFiltersChange()"
+    />
+
+    <select [(ngModel)]="selectedCategoryId" (change)="onFiltersChange()">
+      <option value="all">All categories</option>
+      <option *ngFor="let cat of categories" [value]="cat.id">
+        {{ cat.name }}
+      </option>
+    </select>
+
+    <label>
+      <input
+        type="checkbox"
+        [(ngModel)]="showFavoritesOnly"
+        (change)="onFiltersChange()"
+      />
+      Favorites only
+    </label>
+
+    <select [(ngModel)]="sortKey" (change)="onFiltersChange()">
+      <option value="name-asc">Name A-Z</option>
+      <option value="name-desc">Name Z-A</option>
+      <option value="date-newest">Newest first</option>
+      <option value="date-oldest">Oldest first</option>
+    </select>
+  </div>
+
+  <div *ngIf="contacts.length === 0">
+    <p>No contacts yet.</p>
+  </div>
+
+  <ul class="contacts-list">
+    <li *ngFor="let c of contacts" class="contact-card">
+      <h3>
+        {{ c.firstName }} {{ c.lastName }}
+        <button type="button" (click)="onToggleFavorite(c)">
+          {{ c.favorite ? '★' : '☆' }}
+        </button>
+      </h3>
+
+      <p>{{ c.jobTitle }} - {{ c.company }}</p>
+      <p>{{ c.email }}</p>
+      <p>{{ c.phone }}</p>
+
+      <button type="button" (click)="goToDetail(c)">Details</button>
+      <button type="button" (click)="onDelete(c)">Delete</button>
+    </li>
+  </ul>
+</section>

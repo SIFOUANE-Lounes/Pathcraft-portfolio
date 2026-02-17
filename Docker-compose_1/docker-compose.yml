@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: web
+    ports:
+      - "8484:8484"
+    environment:
+      PORT: "8484"
+      POSTGREL_PASSWORD: "aqwxszedcvfrtgbnjhyujkiolmp"
+      POSTGREL_USER: "poiuytrezaqsdfghjklm!:;,nbvcx"

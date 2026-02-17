@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-violet: #6C63FF;
+    --primary-blue: #5ABFFF;
+    --dark-text: #1A1A1A;
+    --grey-light: #F6F6F6;
+    --grey-medium: #D9D9D9;
+    --white: #FFFFFF;
+    --accent-success: #61D26A;
+    --accent-warning: #FFD15C;
+    
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-extra: 32px;
+
+    /* Light mode colors */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F6F6F6;
+    --bg-tertiary: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #666666;
+    --border-color: #D9D9D9;
+    --card-shadow: rgba(0, 0, 0, 0.08);
+  }
+
+  .dark {
+    --bg-primary: #1A1A1A;
+    --bg-secondary: #2D2D2D;
+    --bg-tertiary: #242424;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B3B3B3;
+    --border-color: #404040;
+    --card-shadow: rgba(0, 0, 0, 0.3);
+  }
+
+  * {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  h3 {
+    font-size: 18px;
+    color: var(--text-primary);
+  }
+
+  p {
+    font-size: 16px;
+    color: var(--text-primary);
+  }
+
+  small {
+    font-size: 14px;
+  }
+}

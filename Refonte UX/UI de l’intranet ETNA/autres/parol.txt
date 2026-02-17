@@ -1,0 +1,57 @@
+🟣 Slide 1 – Titre : Refonte UX/UI de l’intranet ETNA
+
+« Bonjour, je suis Sifouane.
+Je vais vous présenter la refonte UX/UI complète de l’intranet étudiant de l’ETNA, avec pour objectif de transformer une expérience complexe en une interface simple, moderne et efficace. »
+
+🟣 Slide 2 – Contexte & Objectifs
+
+« L’intranet actuel est fonctionnel, mais peu ergonomique.
+Mes objectifs ont été simples : moderniser l’interface, simplifier la navigation, clarifier l’accès à l’information et proposer une expérience cohérente sur ordinateur comme sur mobile. »
+
+🟣 Slide 3 – Problèmes de l’existant
+
+« En analysant l’existant, j’ai relevé des problèmes majeurs : une page d’accueil peu utile, une navigation chargée, un planning difficile à lire, un système de tickets lourd et aucune version mobile.
+Ces limites freinent les étudiants au quotidien. »
+
+🟣 Slide 4 – Parcours utilisateur actuel
+
+« Aujourd’hui, un étudiant doit passer par trop d’étapes pour accéder à la moindre information : connexion, recherche, scroll, changement de menus…
+Le parcours est long, peu intuitif, et surtout frustrant. »
+
+🟣 Slide 5 – Synthèse UX
+
+« En résumé, quatre problèmes UX prioritaires ressortent :
+un parcours trop complexe, une architecture d’information confuse, un manque d’ergonomie globale et une absence totale de responsive design.
+Ce sont les axes que j’ai ciblés dans la refonte. »
+
+🟣 Slide 6 – Besoins utilisateurs
+
+« À partir des observations et retours étudiants, j’ai identifié quatre besoins essentiels :
+une vision claire de la journée, un accès rapide aux modules, une interface cohérente et un système de tickets simple et rapide.
+Ces besoins guident toute la solution. »
+
+🟣 Slide 7 – Nouvelle Arborescence
+
+« J’ai ensuite reconstruit toute la structure de navigation autour de cinq sections principales :
+Accueil, Apprentissage, Planning, Support et Profil.
+Cette nouvelle arborescence réduit les clics et rend la navigation plus logique. »
+
+🟣 Slide 8 – Écrans clés
+
+« Voici les écrans majeurs de la refonte :
+un dashboard qui donne tout l’essentiel dès la première vue,
+une section Apprentissage plus claire,
+et un planning enfin lisible et agréable à utiliser.
+Chaque écran a été pensé pour réduire l’effort de l’utilisateur. »
+
+🟣 Slide 9 – Responsive : Mobile & Desktop
+
+« La refonte apporte aussi une vraie version mobile.
+L’intranet reste cohérent entre desktop et smartphone, avec une lisibilité optimisée et une navigation simplifiée.
+C’est essentiel pour une utilisation quotidienne. »
+
+🟣 Slide 10 – Conclusion
+
+« En conclusion : la navigation est simplifiée, l’interface modernisée, l’accès aux informations plus rapide et l’intranet devient enfin compatible mobile.
+Une expérience pensée pour les étudiants : simple, claire et efficace.
+Merci pour votre attention. »

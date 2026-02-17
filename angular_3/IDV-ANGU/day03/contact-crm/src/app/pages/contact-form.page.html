@@ -1,0 +1,77 @@
+<section>
+  <h2>{{ isEditMode ? 'Edit contact' : 'New contact' }}</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label>
+      First name
+      <input formControlName="firstName" />
+      <span
+        class="error"
+        *ngIf="f['firstName'].invalid && f['firstName'].touched"
+      >
+        First name is required (min 2 chars)
+      </span>
+    </label>
+
+    <label>
+      Last name
+      <input formControlName="lastName" />
+      <span
+        class="error"
+        *ngIf="f['lastName'].invalid && f['lastName'].touched"
+      >
+        Last name is required (min 2 chars)
+      </span>
+    </label>
+
+    <label>
+      Email
+      <input formControlName="email" type="email" />
+      <span class="error" *ngIf="f['email'].invalid && f['email'].touched">
+        Please enter a valid email.
+      </span>
+    </label>
+
+    <label>
+      Phone
+      <input formControlName="phone" />
+      <span class="error" *ngIf="f['phone'].invalid && f['phone'].touched">
+        Phone is required (numbers and + only).
+      </span>
+    </label>
+
+    <label>
+      Company
+      <input formControlName="company" />
+    </label>
+
+    <label>
+      Job title
+      <input formControlName="jobTitle" />
+    </label>
+
+    <label>
+      Category
+      <select formControlName="categoryId">
+        <option [ngValue]="null">None</option>
+        <option *ngFor="let cat of categories" [ngValue]="cat.id">
+          {{ cat.name }}
+        </option>
+      </select>
+    </label>
+
+    <label>
+      <input type="checkbox" formControlName="favorite" />
+      Favorite
+    </label>
+
+    <label>
+      Notes
+      <textarea formControlName="notes"></textarea>
+    </label>
+
+    <button type="submit" [disabled]="form.invalid">
+      {{ isEditMode ? 'Update' : 'Create' }}
+    </button>
+  </form>
+</section>
