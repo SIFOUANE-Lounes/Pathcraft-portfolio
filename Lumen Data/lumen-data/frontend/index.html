@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen Prévention - Observatoire</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; color: #333; }
+        h1 { color: #2c3e50; text-align: center; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .chart-section { margin-bottom: 60px; padding-bottom: 20px; border-bottom: 1px solid #ddd; }
+        .explications { background: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; margin-bottom: 20px; }
+        .constat { font-weight: bold; color: #d35400; }
+        select { padding: 10px; font-size: 16px; margin-bottom: 20px; width: 100%; max-width: 300px; display: block; margin-left: auto; margin-right: auto; }
+        svg { background: white; }
+        .bar:hover { fill: #e74c3c; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Observatoire Accidents & Météo (2024)</h1>
+        
+        <select id="city-select" onchange="loadAllGraphs(this.value)">
+            <option value="Paris">Paris</option>
+            <option value="Marseille">Marseille</option>
+            <option value="Lyon">Lyon</option>
+            <option value="Lille">Lille</option>
+            <option value="Toulouse">Toulouse</option>
+            <option value="Rennes">Rennes</option>
+        </select>
+
+        <div class="chart-section">
+            <h2>1. Accidents selon l'heure de la journée</h2>
+            <div class="explications">
+                <p>Répartition du volume d'accidents sur 24 heures.</p>
+                <p class="constat">Constat : Pics d'accidents aux heures de pointe.</p>
+            </div>
+            <div id="graph-hour"></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>2. Accidents selon le niveau de pluie</h2>
+            <div class="explications">
+                <p>Nombre d'accidents croisé avec l'intensité de la pluie (en mm).</p>
+                <p class="constat">Constat : La tranche 1-5mm concentre un risque notable par temps de pluie.</p>
+            </div>
+            <div id="graph-rain"></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>3. Accidents selon la température</h2>
+            <div class="explications">
+                <p>Impact des températures, particulièrement le risque de verglas.</p>
+                <p class="constat">Constat : Attention particulière sous 0°C (Gel).</p>
+            </div>
+            <div id="graph-temp"></div>
+        </div>
+    </div>
+
+    <script>
+        function drawBarChart(data, containerId, xKey, yKey, color) {
+            d3.select(containerId).html(""); 
+
+            if (!data || data.length === 0) {
+                d3.select(containerId).html(`<p style="color:red;">Aucune donnée trouvée.</p>`);
+                return;
+            }
+
+            const width = 800, height = 400;
+            const margin = { top: 20, right: 20, bottom: 50, left: 60 };
+            const innerWidth = width - margin.left - margin.right;
+            const innerHeight = height - margin.top - margin.bottom;
+
+            const svg = d3.select(containerId)
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            const x = d3.scaleBand().domain(data.map(d => d[xKey])).range([0, innerWidth]).padding(0.2);
+            const y = d3.scaleLinear().domain([0, d3.max(data, d => Number(d[yKey]))]).nice().range([innerHeight, 0]);
+
+            svg.append("g").attr("transform", `translate(0,${innerHeight})`).call(d3.axisBottom(x));
+            svg.append("g").call(d3.axisLeft(y));
+
+            svg.selectAll(".bar")
+                .data(data)
+                .enter().append("rect")
+                .attr("class", "bar")
+                .attr("x", d => x(d[xKey]))
+                .attr("y", d => y(Number(d[yKey])))
+                .attr("width", x.bandwidth())
+                
+                .attr("height", d => innerHeight - y(Number(d[yKey])))
+                .attr("fill", color);
+        }
+
+        async function loadAllGraphs(city) {
+            console.log("On essaie de charger les données pour : " + city);
+            try {
+                const resHour = await fetch(`http://localhost:3000/stats/accidents-by-hour?city=${city}`);
+                const dataHour = await resHour.json();
+                console.log("Données Heure reçues :", dataHour);
+                drawBarChart(dataHour, "#graph-hour", "hour", "count", "#3498db");
+
+                const resRain = await fetch(`http://localhost:3000/stats/accidents-by-rain?city=${city}`);
+                const dataRain = await resRain.json();
+                console.log("Données Pluie reçues :", dataRain);
+                drawBarChart(dataRain, "#graph-rain", "rain_bin", "count", "#2ecc71");
+
+                const resTemp = await fetch(`http://localhost:3000/stats/accidents-by-temp?city=${city}`);
+                const dataTemp = await resTemp.json();
+
+                console.log("Données Temp reçues :", dataTemp);
+                drawBarChart(dataTemp, "#graph-temp", "temp_bin", "count", "#9b59b6");
+                
+            } catch (error) {
+                console.error("GROSSE ERREUR :", error);
+            }
+        }
+
+        loadAllGraphs("Paris");
+    </script>
+</body>
+</html>
